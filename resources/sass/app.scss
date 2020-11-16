@@ -1,0 +1,26 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.sidebar-sticky{
+  position: sticky;
+  top: 0;
+  height: calc(110vh - 60px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.d-block{
+  background-color: #F0E68C;
+}
