@@ -11,4 +11,9 @@ class DataGajiController extends Controller
     {
         return view('penggajian.datagaji.index');
     }
+
+    public function create()
+    {
+        return view('penggajian.datagaji.create');
+    }
 }

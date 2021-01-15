@@ -11,4 +11,9 @@ class DataLemburPegawaiController extends Controller
     {
         return view('penggajian.datalembur.index');
     }
+
+    public function create()
+    {
+        return view('penggajian.datalembur.create');
+    }
 }

@@ -7,22 +7,21 @@
             <div class="mr-auto px-4">
                 <ul class="list-group">
                     <li class="list-group-item-0 d-flex justify-content-between text-muted align-items-center">
-                        Aplikasi pengajian karyawan
-                    </li> 
-                </ul>   
-                <div class="d-flex align-items-end flex-column ">
-                    <div class="mr-4 px-3">
-                        <img src="{{asset('img/male.png')}}" class="rounded-circle" width="50" alt="">
-                    </div>
-                    <div class="card-0 shadow rounded">
-                        <div class="card-body  text-muted">
-                            Logout Profile
-                        </div>  
-                    </div>  
-                </div>
-                    <div class="d-flex">
-                        <h5 class="text-secondary font-weight-bold">Data Lembur Pegawai</h5>
-                    </div>
+                        Aplikasi pengajian karyawan    
+                    </li>
+                    <li class="list-group-item-0 d-flex align-items-end flex-column ">
+                        <div class="px-5">
+                            <div class="dropdown">
+                                <a href="" class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="{{asset('img/male.png')}}" class="rounded-circle" width="50" alt="">
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <button class="dropdown-item" type="button">Log Out</button>
+                                </div>
+                            </div> 
+                        </div> 
+                    </li>
+                </ul> 
                 <div class="pt-4">
                     <table class="table table-bordered">
                         <thead>
@@ -45,7 +44,7 @@
                                 <td>Rp. 2.500.000</td>
                                 <td>01 Januari 2020</td>
                                 <td> 
-                                    <button type="submit" class="btn btn-sm btn-primary">Lembur Pegawai</button> 
+                                    <a href="{{route('penggajians.data-lembur-pegawai.buat')}}" type="submit" class="btn btn-sm btn-primary">Lembur Pegawai</a> 
                                 </td>
                             </tr>
                         </tbody>
