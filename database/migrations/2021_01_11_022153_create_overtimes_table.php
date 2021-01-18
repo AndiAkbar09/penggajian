@@ -17,7 +17,7 @@ class CreateOvertimesTable extends Migration
             $table->increments('id');
             $table->string('nip');
             $table->string('nama');
-            $table->string('palarys_id');
+            $table->string('salaries_id');
             $table->string('no_rek');
             $table->string('jabatan');
             $table->string('gaji_pokok');
