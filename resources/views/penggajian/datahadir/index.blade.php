@@ -44,7 +44,7 @@
                                 <td>Rp. 2.500.000</td>
                                 <td>01 Januari 2020</td>
                                 <td> 
-                                    <a href="{{route('penggajians.data-lembur-pegawai.buat')}}" type="submit" class="btn btn-sm btn-primary">Lembur Pegawai</a> 
+                                    <a href="" type="submit" class="btn btn-sm btn-primary">Lembur Pegawai</a> 
                                 </td>
                             </tr>
                         </tbody>

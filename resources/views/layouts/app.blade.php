@@ -37,10 +37,10 @@
                                 <a href="{{route('penggajians.data-pegawai')}}" class="nav-link text-light">Data Pegawai</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('penggajians.data-gaji')}}" class="nav-link text-light">Data Gaji</a>
+                                <a href="" class="nav-link text-light">Data Gaji</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('penggajians.data-lembur-pegawai')}}" class="nav-link text-light">Lembur Pegawai</a>
+                                <a href="{{route('penggajians.data-hadir')}}" class="nav-link text-light">Data Hadir</a>
                             </li>
                             <li class="nav-item">
                                 <a href="" class="nav-link text-light">Jabatan</a>

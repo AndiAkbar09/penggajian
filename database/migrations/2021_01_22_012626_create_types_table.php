@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOvertimesTable extends Migration
+class CreateTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,13 @@ class CreateOvertimesTable extends Migration
      */
     public function up()
     {
-        Schema::create('overtimes', function (Blueprint $table) {
+        Schema::create('types', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nip');
-            $table->string('nama');
-            $table->string('salaries_id');
-            $table->string('no_rek');
-            $table->string('jabatan');
-            $table->string('gaji_pokok');
-            $table->string('tgl_masuk');
+            $table->unsignedInteger('employee_id');
+            $table->string('masuk');
+            $table->string('izin');
+            $table->string('alpha');
+            $table->string('lembur');
             $table->timestamps();
         });
     }
@@ -33,6 +31,6 @@ class CreateOvertimesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('overtimes');
+        Schema::dropIfExists('types');
     }
 }

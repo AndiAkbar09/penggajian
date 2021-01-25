@@ -32,23 +32,23 @@
                             <tr>
                                 <th>Nip</th>
                                 <th>Nama</th>
-                                <th>Gaji Pokok</th>
-                                <th>Tanggal Masuk</th>
+                                <th>Jabatan</th>
+                                <th>Informasi</th>
                                 <th>Option</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @forelse($pegawais as $pegawai)
+                            @forelse($employees as $employee)
                             <tr>
-                                <td>{{$pegawai->nip}}</td>
-                                <td>{{$pegawai->nama}}</td>
-                                <td>{{$pegawai->gaji}}</td>
-                                <td>{{$pegawai->tanggal}}</td>
+                                <td>{{$employee->nip}}</td>
+                                <td>{{$employee->nama}}</td>
+                                <td>{{$employee->jabatan}}</td>
+                                <td>{{$employee->keterangan}}</td>
                                 <td>
-                                <form action="{{route('penggajians.data-pegawai.hapus', $pegawai->id)}}" method="post">
+                                <form action="{{route('penggajians.data-pegawai.hapus', $employee->id)}}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <a href="" type="submit" class="btn btn-sm btn-info">Detail</a> 
+                                    <a href="{{route('penggajians.data-pegawai.lihat', $employee->id)}}" type="submit" class="btn btn-sm btn-info">Detail</a> 
                                     <button type="submit" class="btn btn-sm btn-danger">Hapus</button> 
                                     <a href="" type="submit" class="btn btn-sm btn-primary">Transfer Gaji</a> 
                                 </form>

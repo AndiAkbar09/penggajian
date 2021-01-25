@@ -32,14 +32,38 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="">Gaji Pokok</label>
-                                    <input type="text" name="gaji" class="form-control" id="" >
+                                    <label for="">Jabatan</label>
+                                    <input type="text" name="jabatan" class="form-control" id="" >
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="">Tanggal Masuk</label>
-                                    <input type="date" name="tanggal" class="form-control" id="" >
+                                    <label for="">Agama</label>
+                                    <input type="text" name="agama" class="form-control" id="" >
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Tempat Lahir</label>
+                                    <input type="text" name="tempat_lahir" class="form-control" id="" >
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Tanggal Lahir</label>
+                                    <input type="date" name="tanggal_lahir" class="form-control" id="" >
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Alamat</label>
+                                    <input type="text" name="alamat" class="form-control" id="" >
+                                </div>
+                            </div>                    
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="">Status</label>
+                                    <input type="text" name="status" class="form-control" id="" >
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -50,20 +74,8 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="">Alamat</label>
-                                    <input type="text" name="alamat" class="form-control" id="" >
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="">No Telpon</label>
+                                    <label for="">Nomor Telpon</label>
                                     <input type="text" name="no_telp" class="form-control" id="" >
-                                </div>
-                            </div>                    
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="">Agama</label>
-                                    <input type="text" name="agama" class="form-control" id="" >
                                 </div>
                             </div>
                             <div class="col-md-12">
