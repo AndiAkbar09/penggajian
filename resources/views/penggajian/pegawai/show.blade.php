@@ -3,9 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h3 class="text-muted">Data telah terlampir
-                <small class="text-muted">mohon menunggu kabar dari kami</small>
-            </h3>
+            <h3 class="text-muted">Data Pegawai</h3>
             <div class="pt-3">
                 <div class="card border-0">
                     <div class="card-body">
@@ -79,7 +77,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="{{route('penggajians.data-pegawai')}}" type="submit" class="btn btn-success">Kembali</a>
+                                <a href="{{route('penggajians.pegawai')}}" type="submit" class="btn btn-success">Kembali</a>
                             </div>
                         </form>            
                     </div>

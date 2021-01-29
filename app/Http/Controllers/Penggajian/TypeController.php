@@ -9,6 +9,6 @@ class TypeController extends Controller
 {
     public function index()
     {
-        return view('penggajian.datahadir.index');
-    }
+        return view('penggajian.absensi.index');
+    } 
 }

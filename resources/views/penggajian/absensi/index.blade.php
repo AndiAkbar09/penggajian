@@ -22,28 +22,36 @@
                         </div> 
                     </li>
                 </ul> 
+                    <div class="d-flex">
+                        <h5 class="text-muted font-weight-bold">Catatan Kehadiran Pegawai </h5>
+                    </div>
+                    <a href="" type="submit" class="btn btn-warning">Input Kehadiran Pegawai</a>
                 <div class="pt-4">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
                                 <th>Nip</th>
                                 <th>Nama</th>
-                                <th>No rek</th>
                                 <th>Jabatan</th>
-                                <th>Gaji Pokok</th>
-                                <th>Tgl. Masuk</th>
+                                <th>Hadir</th>
+                                <th>Sakit</th>
+                                <th>Izin</th>
+                                <th>Alpha</th>
+                                <th>Lembur</th>
                                 <th>Option</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>123456</td>
-                                <td>Rachmat Ababil</td>
-                                <td>2312498459</td>
-                                <td>Pegawai</td>
-                                <td>Rp. 2.500.000</td>
-                                <td>01 Januari 2020</td>
-                                <td> 
+                                <td>123423</td>
+                                <td>asfedf</td>
+                                <td>asfasf</td>
+                                <td>asfae</td>
+                                <td>asfaf</td>
+                                <td>asfg</td>
+                                <td>asfg</td>
+                                <td>asfg</td>
+                                <td>
                                     <a href="" type="submit" class="btn btn-sm btn-primary">Lembur Pegawai</a> 
                                 </td>
                             </tr>

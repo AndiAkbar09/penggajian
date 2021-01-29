@@ -25,7 +25,7 @@
                 <div class="d-flex">
                     <h5 class="text-muted font-weight-bold">Data Pegawai</h5>
                 </div>
-                <a href="{{route('penggajians.data-pegawai.buat')}}" type="submit" class="btn btn-warning">Tambah Pegawai</a>
+                <a href="{{route('penggajians.pegawai.buat')}}" type="submit" class="btn btn-warning">Tambah Pegawai</a>
                 <div class="pt-4">
                     <table class="table table-bordered">
                         <thead>
@@ -45,12 +45,12 @@
                                 <td>{{$employee->jabatan}}</td>
                                 <td>{{$employee->keterangan}}</td>
                                 <td>
-                                <form action="{{route('penggajians.data-pegawai.hapus', $employee->id)}}" method="post">
+                                <form action="{{route('penggajians.pegawai.hapus', $employee->id)}}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <a href="{{route('penggajians.data-pegawai.lihat', $employee->id)}}" type="submit" class="btn btn-sm btn-info">Detail</a> 
+                                    <a href="{{route('penggajians.pegawai.lihat', $employee->id)}}" type="submit" class="btn btn-sm btn-info">Detail</a> 
                                     <button type="submit" class="btn btn-sm btn-danger">Hapus</button> 
-                                    <a href="" type="submit" class="btn btn-sm btn-primary">Transfer Gaji</a> 
+                                    <a href="{{route('penggajians.pegawai.edit', $employee->id)}}" type="submit" class="btn btn-sm btn-primary">Edit</a> 
                                 </form>
                                 </td>
                             </tr>

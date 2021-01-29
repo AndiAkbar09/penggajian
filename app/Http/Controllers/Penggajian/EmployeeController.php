@@ -21,7 +21,20 @@ class EmployeeController extends Controller
 
     public function store(Request $request)
     {
-        
+        $this->validate($request,[
+            'nip' => 'required',
+            'nama' => 'required',
+            'jabatan' => 'required',
+            'agama' => 'required',
+            'tempat_lahir' => 'required',
+            'tanggal_lahir' => 'required',
+            'alamat' => 'required',
+            'status' => 'required',
+            'jenis_kelamin' => 'required',
+            'no_telp' => 'required',
+            'keterangan' => 'required',
+        ]);
+
         $employee = Employee::create([
             'nip'  => $request->nip,
             'nama'  => $request->nama,
@@ -49,9 +62,25 @@ class EmployeeController extends Controller
             return redirect()->back();
         }
 
+        public function update(Request $request, $id)
+        {
+            $employee = Employee::find($id);
+
+            $employee->update($request->all());
+
+            return redirect()->back();
+        }
+
         public function show($id)
         {
             $employee = Employee::find($id);
             return view('penggajian.pegawai.show', compact('employee'));
         }
+
+        public function edit($id)
+        {
+            $employee = Employee::find($id);
+            return view('penggajian.pegawai.edit', compact('employee'));
+        }
+
 }

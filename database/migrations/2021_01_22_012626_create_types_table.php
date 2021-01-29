@@ -16,10 +16,12 @@ class CreateTypesTable extends Migration
         Schema::create('types', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('employee_id');
-            $table->string('masuk');
+            $table->string('hadir');
+            $table->string('sakit');
             $table->string('izin');
             $table->string('alpha');
             $table->string('lembur');
+
             $table->timestamps();
         });
     }

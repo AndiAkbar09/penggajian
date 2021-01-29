@@ -30,24 +30,23 @@
                             <h3 class="text-light px-2">PAYMENT</h3>
                         </div>
                         <ul class="nav flex-column pt-4">
+
                             <li class="nav-item">
                                 <a href="{{route('penggajians.home')}}" class="nav-link text-light">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('penggajians.data-pegawai')}}" class="nav-link text-light">Data Pegawai</a>
+                                <a href="{{route('penggajians.pegawai')}}" class="nav-link text-light">Employee</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link text-light">Data Gaji</a>
+                                <a href="" class="nav-link text-light">Payment</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('penggajians.data-hadir')}}" class="nav-link text-light">Data Hadir</a>
+                                <a href="" class="nav-link text-light">Price</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link text-light">Jabatan</a>
+                                <a href="{{route('penggajians.data-hadir')}}" class="nav-link text-light">Type</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link text-light">Laporan</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </nav>
