@@ -25,7 +25,7 @@
                     <div class="d-flex">
                         <h5 class="text-muted font-weight-bold">Catatan Kehadiran Pegawai </h5>
                     </div>
-                    <a href="" type="submit" class="btn btn-warning">Input Kehadiran Pegawai</a>
+                    <a href="{{route('tambah.absensi')}}" type="submit" class="btn btn-warning">Input Kehadiran Pegawai</a>
                 <div class="pt-4">
                     <table class="table table-bordered">
                         <thead>
@@ -42,18 +42,25 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($types as $type)
                             <tr>
-                                <td>123423</td>
-                                <td>asfedf</td>
-                                <td>asfasf</td>
-                                <td>asfae</td>
-                                <td>asfaf</td>
-                                <td>asfg</td>
-                                <td>asfg</td>
-                                <td>asfg</td>
-                                <td>
+                                <td>{{$type->employee->nip}}</td>
+                                <td>{{$type->employee->nama}}</td>
+                                <td>{{$type->employee->jabatan}}</td>
+                                <td>{{$type->hadir}}</td>
+                                <td>{{$type->sakit}}</td>
+                                <td>{{$type->izin}}</td>
+                                <td>{{$type->alpha}}</td>
+                                <td>{{$type->lembur}}</td>
+                                <td> 
+                                <form action="{{route('hapus.absensi', $type->id)}}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
                                     <a href="" type="submit" class="btn btn-sm btn-primary">Lembur Pegawai</a> 
+                                </form>
                                 </td>
+                            @endforeach
                             </tr>
                         </tbody>
                     </table>

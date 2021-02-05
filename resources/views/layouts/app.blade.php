@@ -44,7 +44,7 @@
                                 <a href="" class="nav-link text-light">Price</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('penggajians.data-hadir')}}" class="nav-link text-light">Type</a>
+                                <a href="{{route('absensi')}}" class="nav-link text-light">Type</a>
                             </li>
                             
                         </ul>
@@ -58,5 +58,6 @@
             </div>
         </div>
     </div>
+    @include('sweetalert::alert')
 </body>
 </html>

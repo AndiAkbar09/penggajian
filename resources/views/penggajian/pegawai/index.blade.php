@@ -64,6 +64,9 @@
                         </tbody>
                     </table>
                 </div>
+                <div>
+                    {{ $employees->links() }}
+                </div>
             </div>
         </div>
     </div>

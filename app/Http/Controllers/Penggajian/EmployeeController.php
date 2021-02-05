@@ -10,7 +10,7 @@ class EmployeeController extends Controller
 {
     public function index()
     {
-        $employees = Employee::all();
+        $employees = Employee::paginate(4);
         return view('penggajian.pegawai.index', compact('employees'));
     }
 
@@ -21,19 +21,7 @@ class EmployeeController extends Controller
 
     public function store(Request $request)
     {
-        $this->validate($request,[
-            'nip' => 'required',
-            'nama' => 'required',
-            'jabatan' => 'required',
-            'agama' => 'required',
-            'tempat_lahir' => 'required',
-            'tanggal_lahir' => 'required',
-            'alamat' => 'required',
-            'status' => 'required',
-            'jenis_kelamin' => 'required',
-            'no_telp' => 'required',
-            'keterangan' => 'required',
-        ]);
+        
 
         $employee = Employee::create([
             'nip'  => $request->nip,
@@ -50,7 +38,7 @@ class EmployeeController extends Controller
         ]);
 
         $employee->save();
-        return redirect()->back()->with(['success' => 'Data berhasil disimpan']);
+        return redirect('penggajian/data-pegawai')->with('toast_success', 'Data berhasil disimpan');
     }
 
         public function destroy($id)
@@ -59,7 +47,7 @@ class EmployeeController extends Controller
 
             $employee->delete($employee->all());
 
-            return redirect()->back();
+            return redirect('penggajian/data-pegawai')->with('toast_success', 'Data berhasil dihapus');
         }
 
         public function update(Request $request, $id)
@@ -68,7 +56,8 @@ class EmployeeController extends Controller
 
             $employee->update($request->all());
 
-            return redirect()->back();
+            return redirect('penggajian/data-pegawai')->with('toast_success', 'Data berhasil diubah');
+
         }
 
         public function show($id)

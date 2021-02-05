@@ -10,7 +10,7 @@
         <div class="pt-3">
             <div class="card border-0">
                 <div class="card-body">
-                    <form action="{{route('penggajians.data-hadir.simpan')}}" enctype="multipart/form-data" method="post">
+                    <form action="{{route('simpan.absensi')}}" enctype="multipart/form-data" method="post">
                         @csrf
                         @if(session('success'))
                             <div class="alert alert-success">

@@ -29,7 +29,10 @@ Route::group(['prefix'=>'penggajian'],function(){
     Route::get('edit/data-pegawai{employee}', 'Penggajian\EmployeeController@edit')->name('penggajians.pegawai.edit');
     
     //Data Hadir
-    Route::get('data-hadir', 'Penggajian\TypeController@index')->name('penggajians.data-hadir');
+    Route::get('absensi', 'Penggajian\TypeController@index')->name('absensi');
+    Route::get('tambah/absensi', 'Penggajian\TypeController@create')->name('tambah.absensi');
+    Route::post('simpan/absensi', 'Penggajian\TypeController@store')->name('simpan.absensi');
+    Route::delete('hapus/absensi{type}', 'Penggajian\TypeController@destroy')->name('hapus.absensi');
     
 });
 
