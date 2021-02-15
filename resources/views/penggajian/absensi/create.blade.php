@@ -66,7 +66,7 @@
                         </div>
                         <div>
                             <button type="submit" class="btn btn-primary">Simpan</button>
-                            <button type="submit" class="btn btn-success">Cancel</button>
+                            <a href="{{route('absensi')}}" type="submit" class="btn btn-success">Cancel</a>
                         </div>
                     </form>            
                 </div>

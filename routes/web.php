@@ -33,7 +33,14 @@ Route::group(['prefix'=>'penggajian'],function(){
     Route::get('tambah/absensi', 'Penggajian\TypeController@create')->name('tambah.absensi');
     Route::post('simpan/absensi', 'Penggajian\TypeController@store')->name('simpan.absensi');
     Route::delete('hapus/absensi{type}', 'Penggajian\TypeController@destroy')->name('hapus.absensi');
-   
+    Route::get('edit/absensi{type}', 'Penggajian\TypeController@edit')->name('edit.absensi');
+    Route::patch('update/absensi{type}', 'Penggajian\TypeController@update')->name('update.absensi');
+    
+    //Price
+    Route::get('price','Penggajian\PriceController@index')->name('price');
+
+    //Payment
+    Route::get('payment','Penggajian\PaymentController@index')->name('payment');
     
     // SMS
     Route::get('create/sms', 'SmsController@create')->name('create.sms');

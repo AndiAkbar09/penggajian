@@ -57,7 +57,7 @@
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
-                                    <a href="" type="submit" class="btn btn-sm btn-primary">Edit</a> 
+                                    <a href="{{route('edit.absensi', $type->id)}}" type="submit" class="btn btn-sm btn-primary">Edit</a> 
                                 </form>
                                 </td>
                             @endforeach

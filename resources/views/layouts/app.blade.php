@@ -39,10 +39,10 @@
                                 <a href="{{route('penggajians.pegawai')}}" class="nav-link text-light">Employee</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link text-light">Payment</a>
+                                <a href="{{route('payment')}}" class="nav-link text-light">Payment</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link text-light">Price</a>
+                                <a href="{{route('price')}}" class="nav-link text-light">Price</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{route('absensi')}}" class="nav-link text-light">Type</a>

@@ -11,7 +11,7 @@ class TypeController extends Controller
 {
     public function index()
     {
-        $types = Type::with('employee')->paginate(5);
+        $types = Type::with('employee')->latest()->paginate(5);
         return view('penggajian.absensi.index',compact('types'));
     }
 
@@ -45,5 +45,21 @@ class TypeController extends Controller
         return redirect('penggajian/absensi')->with('toast_success', 'Data berhasil dihapus');
         
     }
-    
+    public function edit($id)
+    {
+        $employee = Employee::all();
+        $type = Type::latest()->findOrFail($id);
+        return view('penggajian.absensi.edit',compact('type', 'employee'));
+
+    }
+
+    public function update(Request $request, $id)
+        {
+            $type = Type::find($id);
+
+            $type->update($request->all());
+
+            return redirect('penggajian/absensi')->with('toast_success', 'Data berhasil diubah');
+
+        }
 }
