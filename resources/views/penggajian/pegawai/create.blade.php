@@ -40,11 +40,11 @@
                                 <div class="form-group">
                                     <label for="">Agama</label>
                                     <select name="agama" id="" class="form-control">
-                                        <option value="">Pilih agama</option>
-                                        <option value="islam">Islam</option>
-                                        <option value="hindu">Hindu</option>
-                                        <option value="budha">Budha</option>
-                                        <option value="kristen">Kristen</option>
+                                        <option value=""  >Pilih agama</option>
+                                        <option value="Islam">Islam</option>
+                                        <option value="Hindu">Hindu</option>
+                                        <option value="Budha">Budha</option>
+                                        <option value="Kristen">Kristen</option>
                                     </select>
                                 </div>
                             </div>

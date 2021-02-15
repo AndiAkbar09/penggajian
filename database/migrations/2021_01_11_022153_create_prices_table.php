@@ -17,13 +17,14 @@ class CreatePricesTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('employee_id');
             $table->string('type_id');
+            $table->string('gaji_pokok');
             $table->string('jam_lembur');
             $table->string('uang_lembur');
             $table->string('uang_makan');
             $table->string('uang_transport');
             $table->string('pendapatan');
             $table->string('potongan');
-            $table->string('total_gaji');
+            $table->string('total');
             $table->timestamps();
         });
     }

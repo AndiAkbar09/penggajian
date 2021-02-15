@@ -33,7 +33,11 @@ Route::group(['prefix'=>'penggajian'],function(){
     Route::get('tambah/absensi', 'Penggajian\TypeController@create')->name('tambah.absensi');
     Route::post('simpan/absensi', 'Penggajian\TypeController@store')->name('simpan.absensi');
     Route::delete('hapus/absensi{type}', 'Penggajian\TypeController@destroy')->name('hapus.absensi');
+   
     
+    // SMS
+    Route::get('create/sms', 'SmsController@create')->name('create.sms');
+    Route::post('send/sms', 'SmsController@send')->name('send.sms');
 });
 
 Auth::routes();

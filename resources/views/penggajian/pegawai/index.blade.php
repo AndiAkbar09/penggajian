@@ -48,9 +48,9 @@
                                 <form action="{{route('penggajians.pegawai.hapus', $employee->id)}}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <a href="{{route('penggajians.pegawai.lihat', $employee->id)}}" type="submit" class="btn btn-sm btn-info">Detail</a> 
-                                    <button type="submit" class="btn btn-sm btn-danger">Hapus</button> 
                                     <a href="{{route('penggajians.pegawai.edit', $employee->id)}}" type="submit" class="btn btn-sm btn-primary">Edit</a> 
+                                    <button type="submit" class="btn btn-sm btn-danger">Hapus</button> 
+                                    <a href="{{route('penggajians.pegawai.lihat', $employee->id)}}" type="submit" class="btn btn-sm btn-info">Detail</a> 
                                 </form>
                                 </td>
                             </tr>

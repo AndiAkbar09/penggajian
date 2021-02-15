@@ -45,4 +45,5 @@ class TypeController extends Controller
         return redirect('penggajian/absensi')->with('toast_success', 'Data berhasil dihapus');
         
     }
+    
 }

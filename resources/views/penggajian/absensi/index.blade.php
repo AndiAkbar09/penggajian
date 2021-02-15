@@ -57,7 +57,7 @@
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-sm btn-danger">Delete</button>
-                                    <a href="" type="submit" class="btn btn-sm btn-primary">Lembur Pegawai</a> 
+                                    <a href="" type="submit" class="btn btn-sm btn-primary">Edit</a> 
                                 </form>
                                 </td>
                             @endforeach

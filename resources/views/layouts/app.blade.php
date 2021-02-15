@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body>
     <div id="app">
@@ -45,6 +46,9 @@
                             </li>
                             <li class="nav-item">
                                 <a href="{{route('absensi')}}" class="nav-link text-light">Type</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('create.sms')}}" class="nav-link text-light">{{ __('SMS') }}</a>
                             </li>
                             
                         </ul>

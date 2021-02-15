@@ -12,6 +12,8 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
+        "nexmo/client-core": "^2.6",
+        "nexmo/laravel": "^2.3",
         "realrashid/sweet-alert": "^3.2"
     },
     "require-dev": {
