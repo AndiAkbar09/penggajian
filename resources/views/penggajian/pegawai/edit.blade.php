@@ -76,7 +76,7 @@
                                 <div class="form-group">
                                     <label for="">Jenis Kelamin</label>
                                     <select name="jenis_kelamin" id="" class="form-control">
-                                        <option value="">{{$employee->jenis_kelamin}}</option>
+                                        <option disabled value="">{{$employee->jenis_kelamin}}</option>
                                         <option value="laki - laki">Laki - Laki</option>
                                         <option value="perempuan">Perempuan</option>
                                     </select>

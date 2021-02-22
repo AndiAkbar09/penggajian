@@ -24,12 +24,12 @@
                                     <label for="">
                                         Id
                                     </label>
-                                        <select name="employee_id" id="employee_id" class="form-control select2">
-                                            <option disabled value>Pilih Id</option>
-                                            @foreach ($employee as $item)
-                                            <option value="{{$item->id}}">{{$item->id}}</option>
-                                            @endforeach
-                                        </select>
+                                    <select name="employee_id" id="employee_id" class="form-control select2">
+                                        <option disabled value>Pilih Id</option>
+                                        @foreach ($employee as $item)
+                                        <option value="{{$item->id}}">{{$item->id}}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-4">

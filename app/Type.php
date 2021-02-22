@@ -16,4 +16,8 @@ class Type extends Model
         return $this->belongsTo(Employee::class);
     }
 
+    public function prices()
+    {
+        return $this->hasMany(Price::class);
+    }
 }

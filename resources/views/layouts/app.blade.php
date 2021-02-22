@@ -13,6 +13,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
@@ -54,10 +55,27 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="col-md-10">
-                    <main class="py-4">
-                        @yield('content')
-                    </main>
+                <div class="col-md-10 px-1">
+                    <div aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <h4 class="text-dark pt-2">
+                                    Aplikasi Penggajian Karyawan
+                                </h4>
+                            </li>
+                            <li class="ml-auto">
+                                <div class="px-5">
+                                    <a href="#">
+                                        <img src="{{asset('img/male.png')}}" class="rounded-circle " alt="" width="50px">
+                                    </a>
+                                </div> 
+                            </li>
+                        </ol>
+
+                        <main class="py-4">
+                            @yield('content')
+                        </main>
+                    </div>
                 </div>
             </div>
         </div>

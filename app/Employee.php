@@ -17,4 +17,13 @@ class Employee extends Model
     {
         return $this->hasMany(Type::class);
     }
+
+    public function prices()
+    {
+        return $this->hasMany(Price::class);
+    }
+    public function payments()
+    {
+        return $this->hasMany(Payment::class);
+    }
 }
